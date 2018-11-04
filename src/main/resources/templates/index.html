@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:border-radius="http://www.w3.org/1999/xhtml">
+<head>
+    <th:block th:replace="fragments/head :: head" />
+    <title>FreeFile | Home</title>
+</head>
+<body>
+    <!--Hero Image / Welcome -->
+    <div id="welcome">
+        <div th:class="heroText">
+            <h1 class="mt-5 companyName">FreeFile</h1>
+            <p th:class="lead"><em>" A hassle, cost-free approach to filing your taxes with a certified professional "</em></p>
+            <button th:class="heroBtn">Find out More</button>
+        </div>
+
+    </div>
+
+    <div th:class="container">
+
+        <section th:class="welcome">
+            <h1>FreeFile</h1>
+            <p>"A better way to file your taxes with a certified professional" -anonymous</p>
+        </section>
+
+        <!-- FreeFile service highlights -->
+        <section th:class="icons">
+            <div id="iconGrid">
+                <div>
+                    <p>icon 1</p>
+                    <i class="fas fa-users fa-3x"></i>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>
+                </div>
+                <div>
+                    <p>icon 2</p>
+                    <i class="fas fa-users fa-3x"></i>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>
+                </div>
+                <div>
+                    <p>icon 3</p>
+                    <i class="fas fa-users fa-3x"></i>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- user contact form-->
+        <section th:class="formContact">
+            <div>
+            <h1>What have you got to lose? Let's start the conversation now!</h1>
+                <form>
+                    <input type="text" placeholder="email"/>
+                    <input type="text" placeholder="phone"/>
+                    <input type="text" placeholder="service requested"/>
+                    <button>submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- container end -->
+    </div>
+
+    <!-- footer start -->
+    <footer>
+        <div>
+            <ul>
+                <li>home</li>
+                <li>social media</li>
+                <li>contact</li>
+                <li>other</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

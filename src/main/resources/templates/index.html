@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:border-radius="http://www.w3.org/1999/xhtml">
+<head>
+    <th:block th:replace="fragments/head :: head" />
+    <title>FreeFile | Home</title>
+</head>
+<body>
+    <!--Hero Image / Welcome -->
+    <div id="welcome">
+        <div class="heroText">
+            <h1 class="mt-5 companyName">FreeFile</h1>
+            <p class="lead"><em>" A hassle, cost-free approach to filing your taxes with a certified professional "</em></p>
+            <button class="heroBtn">Find out More</button>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <section>
+            <h1 class="mt-5">FreeFile</h1>
+            <p>"A better way to file your taxes with a certified professional" -anonymous</p>
+
+        <!-- FreeFile service highlights -->
+            <div id="highlightGrid">
+                <div>
+                    <p>icon 1</p>
+                    <i class="fas fa-users fa-3x"></i>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>
+                </div>
+                <div>
+                    <p>icon 2</p>
+                    <i class="fas fa-users fa-3x"></i>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>
+                </div>
+                <div>
+                    <p>icon 3</p>
+                    <i class="fas fa-users fa-3x"></i>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- user contact form-->
+        <section class="mt-5">
+            <h5>Interested? Fill out the form below and let's get started.</h5>
+            <div class="row my-3 d-flex justify-content-center">
+                <div class="card mt-5 text-center opaque">
+                    <form method="POST" class="form">
+                        <div class="card-header">
+                            <h1 class="formHeader">Contact Form</h1>
+                        </div>
+                        <div class="card-body m-auto">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group d-flex justify-content-between">
+                                        <input placeholder="First Name"/>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-between">
+                                        <input placeholder="Last Name" />
+                                    </div>
+                                    <div class="form-group d-flex justify-content-between">
+                                        <input type="email" placeholder="E-mail address" />
+                                    </div>
+                                    <div class="form-group d-flex justify-content-between">
+                                        <input type="text" placeholder="Contact Number"/>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-between">
+                                        <input type="text" placeholder="services interested in"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer p-3 mb-3">
+                            <button class="btn btn-primary btn-custom" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- container end -->
+    </div>
+
+    <!-- footer start -->
+    <footer class="indexFooter p-3">
+        <div class="row">
+            <div class="col-6 text-left">
+                <p>img here</p>
+                <p>company address</p>
+                <p>hours of operation</p>
+                <p>copyright 2018</p>
+            </div>
+            <div class="col-2">
+                <p>About</p>
+                <ul class="footerList1">
+                    <li>Company</li>
+                    <li>Services</li>
+                    <li>News</li>
+                    <a href="/faq"><li>FAQ</li></a>
+                </ul>
+            </div>
+            <div class="col-2">
+                <p>Contact</p>
+                <ul class="footerList1">
+                    <li>Tax Services</li>
+                    <li>Loans</li>
+                    <li>Press</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <p>Follow</p>
+                <ul class="footerList1">
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                    <li>Instagram</li>
+                    <li>Linkedin</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

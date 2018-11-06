@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
+
+/* color and transition variables */
+:root {
+    --primary-color: #07893E;
+    --primary-color-hover: #83C49F;
+    --secondary-color: #071189;
+    --secondary-color-hover: #8388C4;
+    --btn-color: black;
+    --easeOut: all 0.25s ease-out;
+    --cool-color: #E0F0E7;
+}
+
+body, html {
+    text-align: center;
+    height: 100%;
+}
+
+
+/* welcome */
+
+#welcome {
+    margin: 0;
+    padding: 0;
+    /*background: url("../img/handshake.jpg") no-repeat center/cover;*/
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/handshake.jpg");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.companyName {
+    color: var(--primary-color);
+    font-size: 5rem;
+}
+
+.heroText {
+    height: 40%;
+    background: var(--cool-color);
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    width: 100%;
+}
+
+/* utility styling */
+
+h1{
+    font-family: "Anton", sans-serif;
+}
+
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+}
+
+.lead {
+    font-size: 1rem;
+}
+
+#highlightGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.formContact {
+    height: 500px;
+}
+
+
+/* ========  footer style ======== */
+footer {
+    height: 300px;
+    background-color: var(--secondary-color-hover);
+    color: var(--cool-color);
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+footer li:hover {
+    color: var(--primary-color);
+    transition: var(--easeOut);
+}

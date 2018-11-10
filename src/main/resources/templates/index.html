@@ -5,13 +5,30 @@
     <title>FreeFile | Home</title>
 </head>
 <body>
+
+    <!--Navbar-->
+    <th:block th:include="fragments/navbar :: navbar" />
+
+
+
     <!--Hero Image / Welcome -->
     <div id="welcome">
-        <div class="heroText">
-            <h1 class="mt-5 companyName">FreeFile</h1>
-            <p class="lead"><em>" A hassle, cost-free approach to filing your taxes with a certified professional "</em></p>
-            <button class="heroBtn">Find out More</button>
+        <div class="heroText animated fadeIn delay-1s">
+            <h1 class="mt-5 main-title">
+                <span class="animated fadeIn delay-2s">
+                    <!--<span class="eff-l">F</span>ree-->
+                    Free
+                </span>
+                <span class="animated fadeIn delay-3s">
+                    <!--<span class="eff-r">F</span>ile-->
+                    File
+                </span>
+            </h1>
+            <p class="lead my-3 animated fadeIn delay-5s">We'll take care of it for you.</p>
+            <a href="#contact" class="btn btn-outline-light mt-3 animated fadeIn delay-7s">Find out More</a>
         </div>
+
+
 
     </div>
 
@@ -20,6 +37,8 @@
         <section>
             <h1 class="mt-5">FreeFile</h1>
             <p>"A better way to file your taxes with a certified professional" -anonymous</p>
+
+
 
         <!-- FreeFile service highlights -->
             <div id="highlightGrid">
@@ -42,7 +61,7 @@
         </section>
 
         <!-- user contact form-->
-        <section class="mt-5">
+        <section class="mt-5" id="contact">
             <h5>Interested? Fill out the form below and let's get started.</h5>
             <div class="row my-3 d-flex justify-content-center">
                 <div class="card mt-5 text-center opaque">
@@ -121,5 +140,6 @@
         </div>
     </footer>
 
+    <th:block th:include="fragments/scripts :: scripts" />
 </body>
 </html>

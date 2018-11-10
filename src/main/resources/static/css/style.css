@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto:400,500,700|Titan+One');
 
 /* color and transition variables */
 :root {
@@ -12,35 +12,55 @@
 }
 
 body, html {
+    font-family: 'Roboto', Helvetica, sans-serif;
     text-align: center;
     height: 100%;
 }
 
+.animated.delay-7s {
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+}
 
+/* ===== NAVBAR ===== */
+
+.nav-item {
+    margin: 0 1em;
+}
+
+.main-title {
+    font-family: 'Titan One', Helvetica, sans-serif;
+    font-size: 78px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.eff-l {
+    color: #1b0090;
+}
+
+.eff-r {
+    color: #009039
+}
 /* welcome */
 
 #welcome {
     margin: 0;
     padding: 0;
-    /*background: url("../img/handshake.jpg") no-repeat center/cover;*/
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     overflow-y: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/handshake.jpg");
+    background-image: linear-gradient(rgba(7, 137, 62, 0.5), rgba(7, 17, 137, 0.7)), url("../img/handshake.jpg");
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.companyName {
-    color: var(--primary-color);
-    font-size: 5rem;
-}
-
 .heroText {
     height: 40%;
-    background: var(--cool-color);
+    /*background: var(--cool-color);*/
+    background: transparent;
     opacity: 0.9;
     position: absolute;
     top: 50%;
@@ -63,7 +83,10 @@ p {
 }
 
 .lead {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 1em;
+    color: white;
 }
 
 #highlightGrid {
@@ -92,4 +115,10 @@ footer ul {
 footer li:hover {
     color: var(--primary-color);
     transition: var(--easeOut);
+}
+
+
+/*Cell Phones*/
+@media screen and (max-width:500px) {
+
 }

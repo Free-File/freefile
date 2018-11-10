@@ -23,11 +23,6 @@ body, html {
 }
 
 /* ===== NAVBAR ===== */
-#nav-logo {
-    height: 35px;
-    width: auto;
-    padding-bottom: .25em;
-}
 
 .nav-item {
     margin: 0 1em;
@@ -40,29 +35,22 @@ body, html {
     color: white;
 }
 
-.effs {
-    color: #00bf05;
+.eff-l {
+    color: #1b0090;
 }
 
-/*.logo-l {*/
-    /*color: var(--primary-color);*/
-/*}*/
-
-/*.logo-r {*/
-    /*color: var(--secondary-color);*/
-/*}*/
-
-
+.eff-r {
+    color: #009039
+}
 /* welcome */
 
 #welcome {
     margin: 0;
     padding: 0;
-    /*background: url("../img/handshake.jpg") no-repeat center/cover;*/
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     overflow-y: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/handshake.jpg");
+    background-image: linear-gradient(rgba(7, 137, 62, 0.5), rgba(7, 17, 137, 0.7)), url("../img/handshake.jpg");
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,10 +120,5 @@ footer li:hover {
 
 /*Cell Phones*/
 @media screen and (max-width:500px) {
-
-    .logo-r,
-    .logo-l {
-        font-size: 48px;
-    }
 
 }

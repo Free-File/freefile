@@ -15,7 +15,7 @@
     <div id="welcome">
         <div class="heroText animated fadeIn delay-1s">
             <h1 class="mt-5 main-title">
-                <span class="animated fadeIn delay-2s">
+                <span class="animated fadeIn delay-2s" style="margin-right: -.25em;">
                     <!--<span class="eff-l">F</span>ree-->
                     Free
                 </span>
@@ -25,44 +25,64 @@
                 </span>
             </h1>
             <p class="lead my-3 animated fadeIn delay-5s">We'll take care of it for you.</p>
-            <a href="#contact" class="btn btn-outline-light mt-3 animated fadeIn delay-7s">Find out More</a>
+            <a href="#contact" class="btn btn-outline-light mt-3 animated fadeIn delay-7s btn-custom">Find out More</a>
         </div>
-
-
-
     </div>
+
 
     <div class="container">
 
-        <section>
-            <h1 class="mt-5">FreeFile</h1>
-            <p>"A better way to file your taxes with a certified professional" -anonymous</p>
+        <!--ABOUT FREEFILE-->
 
+        <section id="about" class="row">
 
-
-        <!-- FreeFile service highlights -->
-            <div id="highlightGrid">
-                <div>
-                    <p>icon 1</p>
-                    <i class="fas fa-users fa-3x"></i>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>
-                </div>
-                <div>
-                    <p>icon 2</p>
-                    <i class="fas fa-users fa-3x"></i>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>
-                </div>
-                <div>
-                    <p>icon 3</p>
-                    <i class="fas fa-users fa-3x"></i>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>
-                </div>
+            <div class="col-12 col-md-6 mt-4 p-3 d-flex align-self-center justify-content-center">
+                <p>What is <br/>FreeFile?</p>
+            </div>
+            <div class="col-12 col-md-6 p-3">
+                <p>
+                    Free file is Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium culpa dolores earum, incidunt modi mollitia nulla obcaecati odit, possimus quae quisquam recusandae, sequi.
+                </p>
+                <a href="#contact" class="btn btn-custom btn-custom-blue">Get Started</a>
             </div>
         </section>
 
+
+        <!--MOBILE APP SECTION-->
+        <section class="row my-5">
+            <div class="col-12 my-3">
+                <img id="iphone" src="https://www.imore.com/sites/imore.com/files/styles/large_wm_brw/public/field/image/2015/02/iphone-6-plus-home-screen-mac-keyboard-hero.jpg?itok=d5pOTn3p" alt="iphone-app" />
+            </div>
+            <div class="col-12">
+                <p>Get the FreeFile iOS app
+                <span><a href="https://itunes.apple.com/US/app/id1075712675?mt=8" class="btn btn-custom btn-custom-blue btn-sm">Here</a></span>
+                !</p>
+            </div>
+        </section>
+        <!-- FreeFile service highlights -->
+            <!--<div id="highlightGrid">-->
+                <!--<div>-->
+                    <!--<p>icon 1</p>-->
+                    <!--<i class="fas fa-users fa-3x"></i>-->
+                    <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--<p>icon 2</p>-->
+                    <!--<i class="fas fa-users fa-3x"></i>-->
+                    <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--<p>icon 3</p>-->
+                    <!--<i class="fas fa-users fa-3x"></i>-->
+                    <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+
         <!-- user contact form-->
         <section class="mt-5" id="contact">
-            <h5>Interested? Fill out the form below and let's get started.</h5>
+            <p>Have questions?</p>
+            <p>Ready to get started?</p>
+            <small>Fill out the form below and one of our tax preparers will get in touch with you.</small>
             <div class="row my-3 d-flex justify-content-center">
                 <div class="card mt-5 text-center opaque">
                     <form method="POST" class="form">
@@ -91,7 +111,7 @@
                             </div>
                         </div>
                         <div class="card-footer p-3 mb-3">
-                            <button class="btn btn-primary btn-custom" type="submit">Submit</button>
+                            <button class="btn btn-primary btn-custom btn-custom-green" type="submit">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -104,37 +124,28 @@
     <!-- footer start -->
     <footer class="indexFooter p-3">
         <div class="row">
-            <div class="col-6 text-left">
-                <p>img here</p>
-                <p>company address</p>
-                <p>hours of operation</p>
-                <p>copyright 2018</p>
+            <div class="col-4 text-left">
+                <small>
+                    img here<br/>
+                    company address<br/>
+                    hours of operation<br/>
+                    copyright 2018</small>
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <p>About</p>
                 <ul class="footerList1">
                     <li>Company</li>
                     <li>Services</li>
                     <li>News</li>
-                    <a href="/faq"><li>FAQ</li></a>
+                    <li>FAQ</li>
                 </ul>
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <p>Contact</p>
                 <ul class="footerList1">
                     <li>Tax Services</li>
                     <li>Loans</li>
                     <li>Press</li>
-                </ul>
-            </div>
-            <div class="col-2">
-                <p>Follow</p>
-                <ul class="footerList1">
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>YouTube</li>
-                    <li>Instagram</li>
-                    <li>Linkedin</li>
                 </ul>
             </div>
         </div>

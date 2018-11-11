@@ -85,7 +85,7 @@
             <small>Fill out the form below and one of our tax preparers will get in touch with you.</small>
             <div class="row my-3 d-flex justify-content-center">
                 <div class="card mt-5 text-center opaque">
-                    <form method="POST" class="form">
+                    <form class="form" action="https://mailthis.to/mtsolutions18" method="POST" enctype="multipart/form-data">
                         <div class="card-header">
                             <h1 class="formHeader">Contact Form</h1>
                         </div>
@@ -93,25 +93,28 @@
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group d-flex justify-content-between">
-                                        <input placeholder="First Name"/>
+                                        <input type="text" name="First Name" placeholder="First Name"/>
                                     </div>
                                     <div class="form-group d-flex justify-content-between">
-                                        <input placeholder="Last Name" />
+                                        <input type="text" name="Last Name" placeholder="Last Name" />
                                     </div>
                                     <div class="form-group d-flex justify-content-between">
-                                        <input type="email" placeholder="E-mail address" />
+                                        <input type="email" name="_replyto" placeholder="E-mail address" />
                                     </div>
                                     <div class="form-group d-flex justify-content-between">
-                                        <input type="text" placeholder="Contact Number"/>
+                                        <input type="text" name="Contact Number" placeholder="Contact Number"/>
                                     </div>
                                     <div class="form-group d-flex justify-content-between">
-                                        <input type="text" placeholder="services interested in"/>
+                                        <input type="text" name="Additional Info" placeholder="services interested in"/>
                                     </div>
+                                    <input type="hidden" name="_subject" value="[ NEW ] FreeFile Form Submission"/>
+                                    <input type="hidden" name="_after" value="http://freefile.io/"/>
+                                    <input type="hidden" name="_honeypot" value=""/>
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer p-3 mb-3">
-                            <button class="btn btn-primary btn-custom btn-custom-green" type="submit">Submit</button>
+                            <button class="btn btn-primary btn-custom btn-custom-green" type="submit" value="Send">Submit</button>
                         </div>
                     </form>
                 </div>

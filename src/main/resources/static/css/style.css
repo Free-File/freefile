@@ -98,9 +98,17 @@ body, html {
 
 /*APP SECTION*/
 
-#iphone {
-    width: 80%;
-    height: auto;
+/*#iphone {*/
+    /*width: 80%;*/
+    /*height: auto;*/
+/*}*/
+
+#iphoneApp {
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    width: 100%;
+    background: url("../img/smartPhone-logo.png") no-repeat center/cover;
 }
 
 
@@ -154,6 +162,10 @@ footer li:hover {
 
 /*Cell Phones*/
 @media screen and (max-width:500px) {
+
+    .hideOnSmall {
+        display: none;
+    }
 
     .main-title {
         font-size: 64px;

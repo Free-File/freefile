@@ -37,7 +37,7 @@
         <section id="about" class="row">
 
             <div class="col-12 col-md-6 mt-4 p-3 d-flex align-self-center justify-content-center">
-                <p>What is <br/>FreeFile?</p>
+                <p class="section-header">About FreeFile</p>
             </div>
             <div class="col-12 col-md-6 p-3">
                 <p>
@@ -49,9 +49,9 @@
 
 
         <!--MOBILE APP SECTION-->
-        <section class="row my-5">
+        <section id="iphoneAppSection" class="row my-5">
             <div class="col-12 my-3">
-                <div id="iphoneApp"></div>
+                <img id="iphoneApp" th:src="@{../img/smartPhone-logo.png}" alt="iphoneApp" />
             </div>
             <div class="col-12">
                 <p>Get the FreeFile iOS app
@@ -79,45 +79,37 @@
             <!--</div>-->
 
         <!-- user contact form-->
-        <section class="mt-5" id="contact">
-            <p>Have questions?</p>
-            <p>Ready to get started?</p>
-            <small>Fill out the form below and one of our tax preparers will get in touch with you.</small>
-            <div class="row my-3 d-flex justify-content-center">
-                <div class="card mt-5 text-center opaque">
-                    <form class="form" action="https://mailthis.to/mtsolutions18" method="POST" enctype="multipart/form-data">
-                        <div class="card-header">
-                            <h1 class="formHeader">Contact Form</h1>
-                        </div>
-                        <div class="card-body m-auto">
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group d-flex justify-content-between">
-                                        <input type="text" name="First Name" placeholder="First Name"/>
-                                    </div>
-                                    <div class="form-group d-flex justify-content-between">
-                                        <input type="text" name="Last Name" placeholder="Last Name" />
-                                    </div>
-                                    <div class="form-group d-flex justify-content-between">
-                                        <input type="email" name="_replyto" placeholder="E-mail address" />
-                                    </div>
-                                    <div class="form-group d-flex justify-content-between">
-                                        <input type="text" name="Contact Number" placeholder="Contact Number"/>
-                                    </div>
-                                    <div class="form-group d-flex justify-content-between">
-                                        <input type="text" name="Additional Info" placeholder="services interested in"/>
-                                    </div>
-                                    <input type="hidden" name="_subject" value="[ NEW ] FreeFile Form Submission"/>
-                                    <input type="hidden" name="_after" value="http://freefile.io/"/>
-                                    <input type="hidden" name="_honeypot" value=""/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer p-3 mb-3">
-                            <button class="btn btn-primary btn-custom btn-custom-green" type="submit" value="Send">Submit</button>
-                        </div>
-                    </form>
-                </div>
+        <section class="row" id="contact">
+
+            <div class="col-12">
+                <p class="section-header">Contact Us</p>
+                <p>Have questions?</p>
+                <p>Ready to get started?</p>
+                <small>Fill out the short form below and one of our representatives will contact you!</small>
+            </div>
+            <div class="col-12" id="form-div">
+                <form class="form mt-4" action="https://mailthis.to/mtsolutions18" method="POST" enctype="multipart/form-data">
+                    <div class="form-group input-custom">
+                        <input class="form-control" type="text" name="First Name" placeholder="First Name"/>
+                    </div>
+                    <div class="form-group input-custom">
+                        <input class="form-control" type="text" name="Last Name" placeholder="Last Name" />
+                    </div>
+                    <div class="form-group input-custom">
+                        <input class="form-control" type="email" name="_replyto" placeholder="Email Address" />
+                    </div>
+                    <div class="form-group input-custom">
+                        <input class="form-control" type="text" name="Contact Number" placeholder="Phone Number"/>
+                    </div>
+                    <div class="form-group input-custom">
+                        <input class="form-control" type="text" name="Additional Info" placeholder="Services Requested (optional)"/>
+                    </div>
+                    <input type="hidden" name="_subject" value="[ NEW ] FreeFile Form Submission"/>
+                    <input type="hidden" name="_after" value="http://freefile.io/"/>
+                    <input type="hidden" name="_honeypot" value=""/>
+
+                    <button type="submit" class="btn btn-block btn-custom btn-custom-blue mb-5">Submit</button>
+                </form>
             </div>
         </section>
 

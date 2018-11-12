@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Roboto:400,500,700|Bungee');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Roboto:400,500,700|Bungee');
 
 /* color and transition variables */
 :root {
@@ -11,20 +11,21 @@
     --cool-color: #E0F0E7;
 }
 
+.animated.delay-7s {
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+}
+
+/* ========== GENERAL ========== */
 body, html {
     font-family: 'Roboto', Helvetica, sans-serif;
     text-align: center;
     height: 100%;
 }
 
-.animated.delay-7s {
-    -webkit-animation-delay: 7s;
-    animation-delay: 7s;
-}
-
+/*buttons*/
 .btn-custom { transition: ease .5s; }
 .btn-custom:hover { letter-spacing: 1px; }
-
 .btn-custom-blue {
     background-color: var(--secondary-color);
     color: white;
@@ -33,10 +34,22 @@ body, html {
     background-color: var(--secondary-color-hover);
     color: white;
 }
+.btn-custom-green {
+    background-color: var(--primary-color);
+    color: white;
+}
+.btn-custom-green:hover {
+    background-color: var(--primary-color-hover);
+    color: white;
+}
 
-.title {
-    font-family: 'Bungee', Helvetica, sans-serif; !important;
-    font-weight: 900;
+.hideOnSmall {
+    display: none;
+}
+
+.section-header {
+    font-family: 'Anonymous Pro', Helvetica, sans-serif;
+    font-size: 1.2rem;
 }
 
 /* ===== NAVBAR ===== */
@@ -47,7 +60,7 @@ body, html {
 
 .main-title {
     font-family: 'Bungee', Helvetica, sans-serif;
-    font-size: 78px;
+    font-size: 64px;
     letter-spacing: 1px;
     color: white;
 }
@@ -68,12 +81,14 @@ body, html {
 .logo-r {
     color: var(--secondary-color);
 }
-/* welcome */
+
+
+/* ========== HERO ========== */
 
 #welcome {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: calc(100vh - 65px); /* 100% viewport height, minus height of navbar */
     width: 100%;
     overflow-y: hidden;
     background-image: linear-gradient(rgba(7, 137, 62, 0.5), rgba(7, 17, 137, 0.7)), url("../img/handshake.jpg");
@@ -81,6 +96,10 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.title {
+    font-family: 'Bungee', Helvetica, sans-serif; !important;
+    font-weight: 900;
 }
 
 .heroText {
@@ -96,20 +115,19 @@ body, html {
     width: 100%;
 }
 
-/*APP SECTION*/
-
-/*#iphone {*/
-    /*width: 80%;*/
-    /*height: auto;*/
-/*}*/
+/* ========== APP SECTION ========== */
 
 #iphoneApp {
     margin: 0;
     padding: 0;
-    height: 700px;
-    width: 100%;
-    background: url("../img/smartPhone-logo.png") no-repeat center/cover;
+    height: 400px;
+    width: auto;
 }
+
+
+/* ========= CONTACT FORM ========= */
+
+
 
 
 /* utility styling */
@@ -121,7 +139,7 @@ h1{
 
 p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .lead {
@@ -142,7 +160,7 @@ p {
 }
 
 
-/* ========  footer style ======== */
+/* ========  FOOTER ======== */
 footer {
     height: 300px;
     background-color: var(--secondary-color-hover);
@@ -160,15 +178,15 @@ footer li:hover {
 }
 
 
-/*Cell Phones*/
-@media screen and (max-width:500px) {
+/* Larger Devices */
+    @media screen and (min-width: 576px) {
 
-    .hideOnSmall {
-        display: none;
-    }
+        .hideOnSmall {
+            display: block;
+        }
 
-    .main-title {
-        font-size: 64px;
-    }
+        .main-title {
+            font-size: 78px;
+        }
 
 }

@@ -49,7 +49,13 @@ body, html {
 
 .section-header {
     font-family: 'Anonymous Pro', Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+}
+
+.hr-green {
+    border: var(--primary-color) double 3px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* ===== NAVBAR ===== */
@@ -122,6 +128,13 @@ body, html {
     padding: 0;
     height: 400px;
     width: auto;
+}
+
+#iphoneAppSection {
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8)),
+            url("../img/dollars.jpg");
 }
 
 

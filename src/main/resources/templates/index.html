@@ -9,8 +9,6 @@
     <!--Navbar-->
     <th:block th:include="fragments/navbar :: navbar" />
 
-
-
     <!--Hero Image / Welcome -->
     <div id="welcome">
         <div class="heroText animated fadeIn delay-1s">
@@ -33,7 +31,6 @@
     <div class="container">
 
         <!--ABOUT FREEFILE-->
-
         <section id="about" class="row my-3">
 
             <div class="col-12 col-md-6 mt-4 d-flex align-self-center justify-content-center">
@@ -50,6 +47,46 @@
             </div>
         </section>
 
+        <!-- ====== ** FreeFile service highlights ** ====== -->
+        <section id="services">
+
+            <div class="col-12 col-md-6 mt-4 d-flex align-self-center justify-content-center">
+                <h6 class="section-header">Our Services</h6>
+            </div>
+            <div class="col-12">
+                <hr class="hr-green" />
+            </div>
+            <div id="servicesRow1">
+                <div>
+                    <p>service 1</p>
+                    <i class="fas fa-users fa-3x"></i>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+                </div>
+                <div>
+                    <p>service 2</p>
+                    <i class="fas fa-globe fa-3x"></i>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+                </div>
+                <div>
+                    <p>service 3</p>
+                    <i class="fas fa-balance-scale fa-3x"></i>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+                </div>
+            </div>
+            <div id="servicesRow2">
+                <div>
+                    <p>service 4</p>
+                    <i class="fas fa-balance-scale fa-3x"></i>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+                </div>
+                <div>
+                    <p>service 5</p>
+                    <i class="fas fa-balance-scale fa-3x"></i>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+                </div>
+            </div>
+        </section>
+
 
         <!--MOBILE APP SECTION-->
         <section id="iphoneAppSection" class="row my-5 py-5">
@@ -62,24 +99,6 @@
                 !</p>
             </div>
         </section>
-        <!-- FreeFile service highlights -->
-            <!--<div id="highlightGrid">-->
-                <!--<div>-->
-                    <!--<p>icon 1</p>-->
-                    <!--<i class="fas fa-users fa-3x"></i>-->
-                    <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>-->
-                <!--</div>-->
-                <!--<div>-->
-                    <!--<p>icon 2</p>-->
-                    <!--<i class="fas fa-users fa-3x"></i>-->
-                    <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>-->
-                <!--</div>-->
-                <!--<div>-->
-                    <!--<p>icon 3</p>-->
-                    <!--<i class="fas fa-users fa-3x"></i>-->
-                    <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</p>-->
-                <!--</div>-->
-            <!--</div>-->
 
         <!-- user contact form-->
         <section class="row" id="contact">
@@ -119,32 +138,37 @@
         <!-- container end -->
     </div>
 
-    <!-- footer start -->
-    <footer class="indexFooter p-3">
-        <div class="row">
-            <div class="col-4 text-left">
+    <!-- ====== ** Footer ** ====== -->
+    <footer>
+        <div class="footerGrid">
+            <div class="footerMain">
                 <small>
-                    img here<br/>
-                    company address<br/>
-                    hours of operation<br/>
+                    FreeFile text logo<br/>
+                    123 Perfect St. SA, TX<br/>
+                    (210) 111-2222<br/>
+                    M - F 9am - 9pm<br/>
                     copyright 2018</small>
+                <div class="socialIcons mt-3">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <i class="fab fa-twitter-square fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
             </div>
-            <div class="col-4">
-                <p>About</p>
-                <ul class="footerList1">
-                    <li>Company</li>
-                    <li>Services</li>
-                    <li>News</li>
-                    <li>FAQ</li>
-                </ul>
+            <div class="footerAbout text-right hideOnSmall">
+                <h6>About</h6>
+                <small>
+                    <a href="#">Company</a><br/>
+                    <a href="#">Services</a><br/>
+                    <a href="#">News</a><br/>
+                    <a href="/faq">FAQ</a></small>
             </div>
-            <div class="col-4">
-                <p>Contact</p>
-                <ul class="footerList1">
-                    <li>Tax Services</li>
-                    <li>Loans</li>
-                    <li>Press</li>
-                </ul>
+            <div class="footerContact text-center hideOnSmall">
+                <h6>Contact</h6>
+                <small>
+                    <a href="#">Services</a><br/>
+                    <a href="#">Loans</a><br/>
+                    <a href="#">Press</a><br/>
+                    <a href="#">Terms &amp; Conditions</a></small>
             </div>
         </div>
     </footer>

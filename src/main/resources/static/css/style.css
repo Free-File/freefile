@@ -23,6 +23,7 @@ body, html {
     height: 100%;
 }
 
+
 /*buttons*/
 .btn-custom { transition: ease .5s; }
 .btn-custom:hover { letter-spacing: 1px; }
@@ -155,6 +156,10 @@ p {
     font-size: 1rem;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .lead {
     font-size: 1.2rem;
     font-weight: 500;
@@ -162,10 +167,20 @@ p {
     color: white;
 }
 
-#highlightGrid {
+#servicesRow1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+}
+
+#servicesRow2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#services p {
+    color: var(--primary-color-hover);
 }
 
 .formContact {
@@ -175,21 +190,46 @@ p {
 
 /* ========  FOOTER ======== */
 footer {
+    padding: 2rem;
     height: 300px;
     background-color: var(--secondary-color-hover);
     color: var(--cool-color);
 }
 
-footer ul {
+footer a {
     list-style-type: none;
-    text-align: left;
+    /*text-align: left;*/
+    color: var(--cool-color);
 }
 
-footer li:hover {
+footer a:hover {
     color: var(--primary-color);
     transition: var(--easeOut);
 }
 
+.socialIcons i {
+    padding: 5px 5px 5px 0;
+}
+
+.socialIcons i:hover {
+    color: var(--primary-color);
+    transition: var(--easeOut);
+    cursor: pointer;
+}
+
+/* ====== footer grid ====== */
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.footerMain {
+    text-align: left;
+}
+
+/* ====== media breakpoints for devices ====== */
 
 /* Larger Devices */
     @media screen and (min-width: 576px) {
@@ -201,5 +241,32 @@ footer li:hover {
         .main-title {
             font-size: 78px;
         }
+}
 
+/* mobile device */
+@media screen and (max-width: 575px) {
+
+    .hideOnSmall {
+        display: none;
+    }
+
+    #servicesRow2 {
+        display: none;
+    }
+
+    #servicesRow1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .footerGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .footerMain {
+        text-align: center;
+    }
 }

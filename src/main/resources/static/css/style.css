@@ -132,9 +132,11 @@ body, html {
 
 #iphoneAppSection {
     background: linear-gradient(
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.8)),
+            rgba(255, 255, 255, 0.85),
+            rgba(255, 255, 255, 0.85)),
             url("../img/dollars.jpg");
+    border-top: solid var(--secondary-color) 4px;
+    border-bottom: solid var(--secondary-color) 4px;
 }
 
 

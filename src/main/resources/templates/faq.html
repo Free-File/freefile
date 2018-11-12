@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:border-radius="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8" />
-    <title>FAQ</title>
+    <th:block th:replace="fragments/head :: head" />
+    <title>FreeFile | FAQ</title>
+    <link rel="stylesheet" th:href="@{/css/faq.css}" />
 </head>
 <body>
-    <h1>welcome to FAQ</h1>
 
+    <!-- ====== ** Navbar ** ====== -->
+    <th:block th:include="fragments/navbar :: navbar" />
+
+    <div class="container text-center mt-4">
+        <div class="mt-5">
+            <h2 class="faq-heading mt-5"><i class="fas fa-clock header-icons"></i> Frequently Asked Questions</h2>
+            <hr/>
+        </div>
+
+        <div class="mt-4">
+            <section id="questions mt-5">
+
+                <!-- ===== ** question 1 ** ===== -->
+                <div class="question1 questionLead">
+                    <div class="accordion" id="accordionExample">
+                        <div id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
+                                    <i class="far fa-question-circle"></i> Is FreeFile a free service?
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            If you're annual income is less than $54,000, yes, we're able to offer this exclusive "____" government backed option 100% free.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== ** question 2 ** ===== -->
+                <div class="question2 questionLead">
+                    <div class="accordion" id="accordionExample">
+                        <div id="heading headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo">
+                                    <i class="far fa-question-circle"></i> Question Number Two
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Answer for question number TWO will be displayed here.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== ** question 3 ** ===== -->
+                <div class="question2 questionLead">
+                    <div class="accordion" id="accordionExample">
+                        <div id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-controls="collapseThree">
+                                    <i class="far fa-question-circle"></i> Where are you located?
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="collapseThree" class="collapse hide" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Answer for question number THREE will be displayed here.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== ** question 4 ** ===== -->
+                <div class="question4 questionLead">
+                    <div class="accordion" id="accordionExample">
+                        <div id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-controls="collapseFour">
+                                    <i class="far fa-question-circle"></i> What are your hours of operation?
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="collapseFour" class="collapse hide mb-5" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Answer for question number FOUR will be displayed here.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== ** question 5 ** ===== -->
+                <div class="question4 questionLead">
+                    <div class="accordion" id="accordionExample">
+                        <div id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-controls="collapseFive">
+                                    <i class="far fa-question-circle"></i> Why should I choose to file with FreeFile?
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="collapseFive" class="collapse hide mb-5" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Because we are trained, certified professionals and want to help.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== ** question 6 ** ===== -->
+                <div class="question4 questionLead">
+                    <div class="accordion" id="accordionExample">
+                        <div id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-controls="collapseSix">
+                                    <i class="far fa-question-circle"></i> What if I make more than $54,000 per year? Can I still file my taxes with FreeFile?
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="collapseSix" class="collapse hide mb-5" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Answer to question number SIX will be displayed here.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ===== ** container end ** ===== -->
+    </div>
+
+    <th:block th:include="fragments/scripts :: scripts" />
 </body>
 </html>

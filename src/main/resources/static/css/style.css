@@ -56,6 +56,7 @@ body, html {
 .hr-green {
     border: var(--primary-color) double 3px;
     width: 80%;
+    max-width: 420px;
     margin: 0 auto;
 }
 
@@ -122,6 +123,33 @@ body, html {
     width: 100%;
 }
 
+/* ========== ABOUT SECTION ========== */
+
+#about {
+    background: radial-gradient(
+        rgba(131, 136, 196, .3),
+        rgba(255, 255, 255, .9)
+    );
+    background-size: cover;
+    border-bottom: solid var(--secondary-color) 4px;
+}
+
+/* ========== SERVICES SECTION ========== */
+
+#services {
+    background: linear-gradient(
+        rgba(255, 255, 255, .95),
+        rgba(255, 255, 255, .95)),
+        url("../img/dollars.jpg");
+    );
+}
+
+.services > i {
+    color: var(--secondary-color);
+}
+
+
+
 /* ========== APP SECTION ========== */
 
 #iphoneApp {
@@ -133,15 +161,17 @@ body, html {
 
 #iphoneAppSection {
     background: linear-gradient(
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.8)),
-            url("../img/dollars.jpg");
+            rgba(255, 255, 255, 0.85),
+            rgba(131, 196, 159, 0.85));
+    border-top: solid var(--secondary-color) 4px;
 }
 
 
 /* ========= CONTACT FORM ========= */
 
-
+#contact {
+    border-top: lightgray double 4px;
+}
 
 
 /* utility styling */
@@ -215,6 +245,10 @@ footer a:hover {
     color: var(--primary-color);
     transition: var(--easeOut);
     cursor: pointer;
+}
+
+.free {
+    margin-right: -.25em;
 }
 
 /* ====== footer grid ====== */

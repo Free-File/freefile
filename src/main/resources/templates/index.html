@@ -14,11 +14,9 @@
         <div class="heroText animated fadeIn delay-1s">
             <h1 class="mt-5 main-title">
                 <span class="animated fadeIn delay-2s" style="margin-right: -.25em;">
-                    <!--<span class="eff-l">F</span>ree-->
                     Free
                 </span>
                 <span class="animated fadeIn delay-3s">
-                    <!--<span class="eff-r">F</span>ile-->
                     File
                 </span>
             </h1>
@@ -28,85 +26,94 @@
     </div>
 
 
-    <div class="container">
+    <div class="container-fluid">
 
         <!--ABOUT FREEFILE-->
-        <section id="about" class="row my-3">
+        <section id="about" class="row">
 
-            <div class="col-12 col-md-6 mt-4 d-flex align-self-center justify-content-center">
-                <p class="section-header">About FreeFile</p>
+            <div class="col-md-2"></div>
+            <div class="col-12 col-md-3 mt-4 d-flex align-self-center justify-content-center">
+                <p class="section-header">What is FreeFile?</p>
             </div>
-            <div class="col-12">
+            <div class="col-12 d-block d-md-none">
                 <hr class="hr-green" />
             </div>
-            <div class="col-12 col-md-6 mt-4 p-3">
+            <div class="col-12 col-md-5 mt-4 p-3">
                 <p>
-                    Free file is Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium culpa dolores earum, incidunt modi mollitia nulla obcaecati odit, possimus quae quisquam recusandae, sequi.
+                    FreeFile is lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium culpa dolores earum, incidunt modi mollitia nulla obcaecati odit, possimus quae quisquam recusandae, sequi.
                 </p>
                 <a href="#contact" class="btn btn-custom btn-custom-blue my-3">Get Started</a>
             </div>
+            <div class="col-md-2"></div>
         </section>
 
         <!-- ====== ** FreeFile service highlights ** ====== -->
-        <section id="services">
+        <section id="services" class="row p-3">
 
-            <div class="col-12 col-md-6 mt-4 d-flex align-self-center justify-content-center">
+            <div class="col-12 mt-4 d-flex align-self-center justify-content-center">
                 <h6 class="section-header">Our Services</h6>
             </div>
             <div class="col-12">
-                <hr class="hr-green" />
+                <hr class="hr-green mb-5" />
             </div>
-            <div id="servicesRow1">
-                <div>
-                    <p>service 1</p>
-                    <i class="fas fa-users fa-3x"></i>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
-                </div>
-                <div>
-                    <p>service 2</p>
-                    <i class="fas fa-globe fa-3x"></i>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
-                </div>
-                <div>
-                    <p>service 3</p>
-                    <i class="fas fa-balance-scale fa-3x"></i>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+            <div class="col-12">
+                <div class="row">
+                    <div class="services col-12 col-md-4 px-3">
+                        <p class="mb-3">service 1</p>
+                        <i class="fas fa-users fa-3x"></i>
+                        <h6 class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+                    </div>
+                    <div class="services col-12 col-md-4 px-3">
+                        <p class="mb-3">service 2</p>
+                        <i class="fas fa-globe fa-3x"></i>
+                        <h6 class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+                    </div>
+                    <div class="services col-12 col-md-4 px-3">
+                        <p class="mb-3">service 3</p>
+                        <i class="fas fa-balance-scale fa-3x"></i>
+                        <h6 class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+                    </div>
                 </div>
             </div>
-            <div id="servicesRow2">
-                <div>
-                    <p>service 4</p>
+            <div id="servicesRow2" class="row">
+                <div class="services px-5">
+                    <p class="mb-3">service 4</p>
                     <i class="fas fa-balance-scale fa-3x"></i>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+                    <h6 class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
                 </div>
-                <div>
-                    <p>service 5</p>
+                <div class="services px-5">
+                    <p class="mb-3">service 5</p>
                     <i class="fas fa-balance-scale fa-3x"></i>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
+                    <h6 class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, architecto atque equi sint tenetur vero.</h6>
                 </div>
             </div>
         </section>
 
 
         <!--MOBILE APP SECTION-->
-        <section id="iphoneAppSection" class="row my-5 py-5">
-            <div class="col-12 my-3">
-                <img id="iphoneApp" th:src="@{../img/smartPhone-logo.png}" alt="iphoneApp" />
+        <section id="iphoneAppSection" class="row py-5">
+            <div class="col-12 col-md-7 order-2 order-md-1">
+                <h3 class="d-none d-md-block">We have an app!</h3>
+                <p class="mt-3 d-none d-md-block">Our iOS app can be downloaded by clicking
+                <span><a href="https://itunes.apple.com/US/app/id1075712675?mt=8" class="btn btn-custom btn-custom-blue btn-sm">Here</a></span></p>
+                <p class="mt-3 d-block d-md-none">Download our iOS app
+                    <span><a href="https://itunes.apple.com/US/app/id1075712675?mt=8" class="btn btn-custom btn-custom-blue btn-sm">Here</a></span></p>
             </div>
-            <div class="col-12">
-                <p class="mt-3">Get the FreeFile iOS app
-                <span><a href="https://itunes.apple.com/US/app/id1075712675?mt=8" class="btn btn-custom btn-custom-blue btn-sm">Here</a></span>
-                !</p>
+            <div class="col-12 col-md-5 my-3 order-1 order-md-2">
+                <img id="iphoneApp" th:src="@{../img/smartPhone-logo.png}" alt="iphoneApp" />
             </div>
         </section>
 
         <!-- user contact form-->
-        <section class="row" id="contact">
-
+        <section class="row pt-5" id="contact">
             <div class="col-12">
                 <p class="section-header">Contact Us</p>
-                <p>Have questions?</p>
-                <p>Ready to get started?</p>
+            </div>
+            <div class="col-12">
+                <hr class="hr-green" />
+            </div>
+            <div class="col-12 my-4">
+                <p class="m-0">Have questions? Ready to get started?</p>
                 <small>Fill out the short form below and one of our representatives will contact you!</small>
             </div>
             <div class="col-12" id="form-div">
@@ -143,7 +150,9 @@
         <div class="footerGrid">
             <div class="footerMain">
                 <small>
-                    FreeFile text logo<br/>
+                    <span class="title free">Free</span>
+                    <span class="title">File</span>
+                    <br/>
                     123 Perfect St. SA, TX<br/>
                     (210) 111-2222<br/>
                     M - F 9am - 9pm<br/>

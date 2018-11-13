@@ -142,6 +142,7 @@ body, html {
         rgba(255, 255, 255, .95)),
         url("../img/dollars.jpg");
     );
+    padding-top: 1.5em;
 }
 
 .services > i {
@@ -221,7 +222,6 @@ ul {
 /* ========  FOOTER ======== */
 footer {
     padding: 2rem;
-    height: 300px;
     background-color: var(--secondary-color-hover);
     color: var(--cool-color);
 }

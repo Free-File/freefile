@@ -3,3 +3,9 @@
 .mt-5, .my-5 {
     margin-top: 5rem!important;
 }
+
+
+.mailIcon i:hover {
+    color: var(--primary-color);
+    transition: var(--easeOut);
+}

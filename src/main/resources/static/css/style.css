@@ -149,6 +149,8 @@ body, html {
     color: var(--secondary-color);
 }
 
+/* ========== QUALIFY SECTION ========== */
+
 
 
 /* ========== APP SECTION ========== */
@@ -204,15 +206,11 @@ ul {
     grid-gap: 10px;
 }
 
-#servicesRow2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-#services p {
-    color: var(--primary-color-hover);
-}
+/*#servicesRow2 {*/
+    /*display: grid;*/
+    /*grid-template-columns: repeat(2, 1fr);*/
+    /*grid-gap: 10px;*/
+/*}*/
 
 .formContact {
     height: 500px;
@@ -284,9 +282,9 @@ footer a:hover {
         display: none;
     }
 
-    #servicesRow2 {
-        display: none;
-    }
+    /*#servicesRow2 {*/
+        /*display: none;*/
+    /*}*/
 
     #servicesRow1 {
         display: grid;

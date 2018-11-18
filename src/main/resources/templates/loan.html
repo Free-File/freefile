@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:border-radius="http://www.w3.org/1999/xhtml">
+<head>
+    <th:block th:replace="fragments/head :: head" />
+    <title>Loan | FreeFile</title>
+    <link rel="stylesheet" th:href="@{/css/loan.css}" />
+</head>
+<body>
+
+    <!--Navbar-->
+    <th:block th:include="fragments/navbar :: navbar" />
+
+    <div class="container-fluid text-center mt-4">
+        <div class="mt-5">
+            <h3 class="faq-heading mt-5"><i class="fas fa-dollar-sign"></i> Personal Loans</h3>
+            <hr/>
+        </div>
+        <div class="mt-4">
+            <div class="row">
+                <div class="col-12">
+                    <section id="loan mt-5">
+                        <h3 class="mt-4">It's your money. Make it work for you. Loan options available from </h3>
+                    </section>
+                </div>
+            </div>
+            <div class="row mt-5 mb-5">
+                <div class="col">
+                    <h5>Leverage your return to get more cash in your pocket.</h5>
+                    <p>first reinforcement here. Lorem ipsum dolor sit amet, consectetur earum.</p>
+                </div>
+                <div class="col">
+                    <h5>Do you need an additional 5-10% on top of your return?</h5>
+                    <p>We can help. Fill out the form below with your information, and let's get the capital you need right now.</p>
+                </div>
+                <div class="col">
+                    <h5>Insert third talking point here.</h5>
+                    <p>third point reinforcement here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci doloremque earum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-5" id="form-div">
+                <form class="form mt-4" action="https://mailthis.to/mtsolutions18" method="POST" enctype="multipart/form-data">
+                    <div class="form-group input-custom">
+                        <input class="form-control" type="text" name="First Name" placeholder="First Name"/>
+                    </div>
+                    <div class="form-group input-custom">
+                        <input class="form-control" type="text" name="Last Name" placeholder="Last Name" />
+                    </div>
+                    <div class="form-group input-custom">
+                        <input class="form-control" type="email" name="_replyto" placeholder="Email Address" />
+                    </div>
+                    <div class="form-group input-custom">
+                        <input class="form-control" type="text" name="Contact Number" placeholder="Phone Number"/>
+                    </div>
+                    <th:block>
+                        <input type="hidden" name="_subject" value="[ NEW ] Loan Submission "/>
+                        <input type="hidden" name="_after" value="http://freefile.io/"/>
+                        <input type="hidden" name="_honeypot" value=""/>
+                    </th:block>
+                    <button type="submit" class="btn btn-block btn-custom btn-custom-blue mb-5">Submit</button>
+                </form>
+                <small><em>Please note, this is a separate service offered. Fill out the form and one of our agents will follow-up within 24hrs</em></small>
+            </div>
+        </div>
+
+        <!--container end-->
+    </div>
+
+
+    <!-- ====== ** Footer ** ====== -->
+    <footer class="mt-5">
+        <div class="footerGrid">
+            <div class="footerMain">
+                <small>
+                    <span class="title free">Free</span>
+                    <span class="title">File</span>
+                    <br/>
+                    123 Perfect St. SA, TX<br/>
+                    (210) 111-2222<br/>
+                    M - F 9am - 9pm<br/>
+                    copyright 2018</small>
+                <div class="socialIcons mt-3">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <i class="fab fa-twitter-square fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+            </div>
+            <div class="footerAbout text-right hideOnSmall">
+                <h6>About</h6>
+                <small>
+                    <a href="#">Company</a><br/>
+                    <!--<a href="#">Services</a><br/>-->
+                    <a href="#">News</a><br/>
+                    <a href="/faq">FAQ</a><br />
+                    <a href="#">Terms &amp; Conditions</a>
+                </small>
+            </div>
+            <div class="footerContact text-center hideOnSmall">
+                <h6>Additional Services</h6>
+                <small>
+                    <a href="#services">Services</a><br/>
+                    <a href="/loan">Loans</a><br/>
+                </small>
+            </div>
+        </div>
+    </footer>
+    <th:block th:include="fragments/scripts :: scripts" />
+</body>
+</html>

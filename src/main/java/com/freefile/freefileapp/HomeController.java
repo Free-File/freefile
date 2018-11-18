@@ -18,6 +18,10 @@ public class HomeController {
         return "faq";
     }
 
+    @GetMapping("/loan")
+    public String loan(){
+        return "loan";
+    }
 
 
 }

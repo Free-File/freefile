@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Roboto:400,500,700|Bungee');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Noto+Sans:400,700|Bungee');
 
 /* color and transition variables */
 :root {
@@ -7,8 +7,10 @@
     --secondary-color: #071189;
     --secondary-color-hover: #8388C4;
     --btn-color: black;
-    --easeOut: all 0.25s ease-out;
+    --easeOut: all 0.2s ease-out;
+    --easeIn: all 0.2s ease-in;
     --cool-color: #E0F0E7;
+    --para-color: #2f2f2f;
 }
 
 .animated.delay-7s {
@@ -18,9 +20,11 @@
 
 /* ========== GENERAL ========== */
 body, html {
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.6;
     text-align: center;
     height: 100%;
+    color: var(--para-color);
 }
 
 
@@ -49,8 +53,8 @@ body, html {
 }
 
 .section-header {
-    font-family: 'Anonymous Pro', Helvetica, sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .hr-green {
@@ -91,6 +95,47 @@ body, html {
 }
 
 
+
+/******** Custom Links *********/
+
+.link-custom,.link-custom:visited,.link-custom:hover,.link-custom:active{
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    position:relative;
+    transition:0.5s color ease;
+    text-decoration:none;
+}
+
+.link-custom.before:before,.link-custom.after:after{
+    content: "";
+    transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    position:absolute;
+}
+.link-custom.before:before{
+    top:-0.25em;
+}
+.link-custom.after:after{
+    bottom:-0.25em;
+}
+.link-custom.before:before,.link-custom.after:after{
+    height:2px;
+    width:0;
+    background: var(--primary-color-hover);
+}
+.link-custom.seventh:before{
+    right:0;
+}
+.link-custom.seventh:after{
+    left:0;
+}
+.link-custom.before:hover:before,.link-custom.after:hover:after{
+    width:100%;
+}
+
+/******************************/
+
 /* ========== HERO ========== */
 
 #welcome {
@@ -127,16 +172,22 @@ body, html {
 
 #about {
     background: radial-gradient(
-        rgba(131, 136, 196, .3),
+        rgba(131, 196, 159, .5),
         rgba(255, 255, 255, .9)
     );
-    background-size: cover;
     border-bottom: solid var(--secondary-color) 4px;
+    min-height: 300px;
+}
+
+#wIFF {
+    color: var(--primary-color);
+    font-size: 3.4rem;
+
 }
 
 /* ========== SERVICES SECTION ========== */
 
-#services {
+#info-section {
     background: linear-gradient(
         rgba(255, 255, 255, .95),
         rgba(255, 255, 255, .95)),
@@ -163,10 +214,9 @@ body, html {
 }
 
 #iphoneAppSection {
-    background: linear-gradient(
-            rgba(255, 255, 255, 0.85),
-            rgba(131, 196, 159, 0.85));
-    border-top: solid var(--secondary-color) 4px;
+    /*background: var(--primary-color);*/
+    background: -webkit-linear-gradient(left, var(--primary-color), var(--primary-color-hover), #4f4f4f, var(--para-color) 75%);
+    color: white;
 }
 
 
@@ -176,7 +226,53 @@ body, html {
     border-top: lightgray double 4px;
 }
 
+:focus {outline: none;}
+.input-fancy {
+    border: 0;
+    padding: 7px 15px;
+    border: 1px solid #ccc;
+    position: relative;
+    background: transparent;
+}
 
+.input-fancy ~ .focus-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: transparent;
+    transition: 0.4s;
+    z-index: -1;
+}
+
+.input-fancy:focus ~ .focus-bg,
+.has-content.input-fancy ~ .focus-bg {
+    transition: 0.4s;
+    width: 100%;
+    background-color: #ededed;
+}
+
+.input-fancy ~ label {
+    position: absolute;
+    left: 14px;
+    width: 100%;
+    top: 10px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+}
+
+.input-fancy:focus ~ label, .has-content.input-fancy ~ label {
+    top: -18px;
+    left: 0;
+    font-size: 12px;
+    color: #333;
+    transition: 0.3s;
+}
+
+/*==================================*/
 /* utility styling */
 
 h1{
@@ -185,7 +281,7 @@ h1{
 
 
 p {
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 1rem;
 }
 
@@ -198,6 +294,10 @@ ul {
     font-weight: 500;
     padding: 0 1em;
     color: white;
+}
+
+.graytext {
+    color: #5d5d5d;
 }
 
 #servicesRow1 {
@@ -216,11 +316,16 @@ ul {
     height: 500px;
 }
 
+.row {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 /* ========  FOOTER ======== */
 footer {
-    padding: 2rem;
-    background-color: var(--secondary-color-hover);
+    padding: 1.5em;
+    background-color: #323232;
     color: var(--cool-color);
 }
 
@@ -231,7 +336,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color-hover);
     transition: var(--easeOut);
 }
 
@@ -240,7 +345,7 @@ footer a:hover {
 }
 
 .socialIcons i:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color-hover);
     transition: var(--easeOut);
     cursor: pointer;
 }
@@ -248,6 +353,21 @@ footer a:hover {
 .free {
     margin-right: -.25em;
 }
+
+.footer-hrs {
+    border: var(--secondary-color-hover) 2px solid;
+}
+
+.footer-logo .main-title {
+    font-size: 6rem;
+    transition: var(--easeOut);
+    text-decoration: none;
+}
+.footer-logo .main-title:hover {
+    font-size: 6.4rem;
+}
+
+#logo-row { height: 100%; }
 
 /* ====== footer grid ====== */
 

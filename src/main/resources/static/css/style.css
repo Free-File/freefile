@@ -381,10 +381,18 @@ footer a:hover {
     text-align: left;
 }
 
+.mobileViewUrls a {
+    padding: 5px;
+}
+
 /* ====== media breakpoints for devices ====== */
 
 /* Larger Devices */
     @media screen and (min-width: 576px) {
+        
+        .showOnSmall {
+            display: none;
+        }
 
         .hideOnSmall {
             display: block;

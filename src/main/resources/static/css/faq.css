@@ -4,8 +4,13 @@
     margin-top: 5rem!important;
 }
 
+.mailIcon i {
+    transition: var(--easeIn);
+    color: var(--primary-color);
+}
 
 .mailIcon i:hover {
-    color: var(--primary-color);
+    color: var(--primary-color-hover);
     transition: var(--easeOut);
+    font-size: 3.2rem;
 }

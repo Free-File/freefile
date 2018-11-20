@@ -12,14 +12,14 @@
 
     <div class="container-fluid text-center mt-4">
         <div class="mt-5">
-            <h2 class="faq-heading mt-5"><i class="fas fa-clock header-icons"></i> Frequently Asked Questions</h2>
+            <h2 class="faq-heading mt-5"><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
             <hr/>
         </div>
 
         <div class="mt-4">
             <div class="row">
                 <div class="col-12">
-                    <section id="questions mt-5">
+                    <section id="questions">
 
                         <!-- ===== ** question 1 ** ===== -->
                         <div class="question1 questionLead">
@@ -203,7 +203,8 @@
         </div>
         <div class="row mt-4 mb-5">
             <div class="col-12 text-center">
-                <h6>Don't see your question here? Drop us a line at:</h6>
+                <h6>Can't find the answer to your question here?<br/>
+                    Drop us a line at:</h6>
                 <div class="mailIcon">
                     <i class="fas fa-envelope fa-3x"></i>
                 </div>
@@ -213,10 +214,10 @@
         <!-- ===== ** container end ** ===== -->
     </div>
 
-    <!-- ====== ** Footer ** ====== -->
+    <!-- ====== ** footer ** ====== -->
     <footer>
-        <div class="footerGrid">
-            <div class="footerMain">
+        <div class="row">
+            <div class="col-12 col-md-2 text-md-left">
                 <div class="mobileViewUrls showOnSmall text-center mb-4">
                     <a href="/">Home </a>
                     <span>|</span>
@@ -226,34 +227,40 @@
                 </div>
                 <small>
                     <span class="title free">Free</span>
-                    <span class="title">File</span><br/>
-                    <em>copyright 2018</em>
+                    <span class="title">File</span>
                     <br/>
-                    123 Perfect St. SA, TX<br/>
-                    (210) 111-2222<br/>
+                    <a target="_blank" href="http://maps.google.com/?q=123+Perfect+St+San+Antonio+TX+78259">123 Perfect St <br/>San Antonio, TX 78259</a><br/>
+                    <a href="tel:2101112222" class="phone-no">(210)111-2222</a><br/>
                     M - F 9am - 9pm<br/>
-                    </small>
+                    © Copyright 2018
+                </small>
                 <div class="socialIcons mt-3">
                     <i class="fab fa-facebook fa-2x"></i>
                     <i class="fab fa-twitter-square fa-2x"></i>
                     <i class="fab fa-instagram fa-2x"></i>
                 </div>
             </div>
-            <div class="footerAbout text-right hideOnSmall">
-                <h6>About</h6>
-                <small>
-                    <a href="#">Company</a><br/>
-                    <a href="#">Services</a><br/>
-                    <a href="#">News</a><br/>
-                    <a href="/">Home</a></small>
+            <div class="col-md-8">
+                <div class="row" id="logo-row">
+                    <div class="col-md-4 align-self-center footer-logo">
+                        <hr class="footer-hrs" />
+                    </div>
+                    <div class="col-md-4 align-self-center footer-logo">
+                        <a th:href="'/'" class="main-title">FF</a>
+                    </div>
+                    <div class="col-md-4 align-self-center footer-logo">
+                        <hr class="footer-hrs" />
+                    </div>
+                </div>
             </div>
-            <div class="footerContact text-center hideOnSmall">
-                <h6>Contact</h6>
+            <!--<div class="footerContact text-center hideOnSmall">-->
+            <div class="col-12 col-md-2 d-none d-md-block text-right">
+                <h6>Helpful Links</h6>
                 <small>
+                    <a href="/">Home</a><br/>
                     <a href="/loan">Loans</a><br/>
-                    <a href="#">Press</a><br/>
-                    <!--<a href="#">Terms &amp; Conditions</a>-->
-                </small>
+                    <a href="#questions">FAQ</a><br/>
+                    </small>
             </div>
         </div>
     </footer>

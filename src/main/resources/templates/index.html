@@ -158,16 +158,16 @@
             <div class="col-12 col-md-5" id="form-div">
                 <form class="form mt-4" action="https://mailthis.to/FreeFile" method="POST" enctype="multipart/form-data">
                     <div class="form-group input-custom">
-                        <input class="form-control" type="text" name="First Name" placeholder="First Name"/>
+                        <input class="form-control" type="text" name="First Name" placeholder="First Name" th:required="required"/>
                     </div>
                     <div class="form-group input-custom">
-                        <input class="form-control" type="text" name="Last Name" placeholder="Last Name" />
+                        <input class="form-control" type="text" name="Last Name" placeholder="Last Name" th:required="required" />
                     </div>
                     <div class="form-group input-custom">
-                        <input class="form-control" type="email" name="_replyto" placeholder="Email Address" />
+                        <input class="form-control" type="email" name="_replyto" placeholder="Email Address" th:required="required" />
                     </div>
                     <div class="form-group input-custom">
-                        <input class="form-control" type="text" name="Contact Number" placeholder="Phone Number"/>
+                        <input class="form-control" type="text" name="Contact Number" placeholder="Phone Number" th:required="required"/>
                     </div>
                     <div class="form-group input-custom">
                         <input class="form-control" type="text" name="Additional Info" placeholder="Additional Information (optional)"/>

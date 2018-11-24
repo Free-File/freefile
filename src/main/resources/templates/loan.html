@@ -67,18 +67,30 @@
                 </div>
             </div>
             <div class="col-12 col-md-5" id="form-div">
-                <form class="form mt-4" action="https://mailthis.to/FreeFile" method="POST" enctype="multipart/form-data" th:onsubmit="errorCheck">
+                <form class="form needs-validation mt-4" action="https://mailthis.to/FreeFile" method="POST" enctype="multipart/form-data" th:novalidate="true">
                     <div class="form-group input-custom">
                         <input class="form-control" th:id="firstName" type="text" name="First Name" placeholder="First Name" th:required="required"/>
+                        <div class="invalid-feedback">
+                            * Required field
+                        </div>
                     </div>
                     <div class="form-group input-custom">
                         <input class="form-control" type="text" name="Last Name" placeholder="Last Name" th:required="required" />
+                        <div class="invalid-feedback">
+                            * Required field
+                        </div>
                     </div>
                     <div class="form-group input-custom">
                         <input class="form-control" type="email" name="_replyto" placeholder="Email Address" th:required="required" />
+                        <div class="invalid-feedback">
+                            * Required field
+                        </div>
                     </div>
                     <div class="form-group input-custom">
                         <input class="form-control" type="text" name="Contact Number" placeholder="Phone Number" th:required="required"/>
+                        <div class="invalid-feedback">
+                            * Required field
+                        </div>
                     </div>
                         <input type="hidden" name="_subject" value="[ NEW ] Loan Submission"/>
                         <input type="hidden" name="_after" value="http://freefile.io/"/>
@@ -143,5 +155,6 @@
     </footer>
 
     <th:block th:include="fragments/scripts :: scripts" />
+    <script th:src="@{js/form.js}"></script>
 </body>
 </html>

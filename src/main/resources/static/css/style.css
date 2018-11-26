@@ -27,6 +27,10 @@ body, html {
     color: var(--para-color);
 }
 
+body {
+    padding-top: 40px;
+}
+
 
 /*buttons*/
 .btn-custom { transition: ease .5s; }
@@ -215,7 +219,7 @@ body, html {
 
 #iphoneAppSection {
     /*background: var(--primary-color);*/
-    background: -webkit-linear-gradient(left, var(--primary-color), var(--primary-color-hover), #4f4f4f, var(--para-color) 75%);
+    background: var(--para-color) 75%;
     color: white;
 }
 
@@ -227,50 +231,6 @@ body, html {
 }
 
 :focus {outline: none;}
-.input-fancy {
-    border: 0;
-    padding: 7px 15px;
-    border: 1px solid #ccc;
-    position: relative;
-    background: transparent;
-}
-
-.input-fancy ~ .focus-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: transparent;
-    transition: 0.4s;
-    z-index: -1;
-}
-
-.input-fancy:focus ~ .focus-bg,
-.has-content.input-fancy ~ .focus-bg {
-    transition: 0.4s;
-    width: 100%;
-    background-color: #ededed;
-}
-
-.input-fancy ~ label {
-    position: absolute;
-    left: 14px;
-    width: 100%;
-    top: 10px;
-    color: #aaa;
-    transition: 0.3s;
-    z-index: -1;
-    letter-spacing: 0.5px;
-}
-
-.input-fancy:focus ~ label, .has-content.input-fancy ~ label {
-    top: -18px;
-    left: 0;
-    font-size: 12px;
-    color: #333;
-    transition: 0.3s;
-}
 
 /*==================================*/
 /* utility styling */
@@ -400,6 +360,10 @@ footer a:hover {
 
         .main-title {
             font-size: 78px;
+        }
+
+        #iphoneAppSection {
+            background: -webkit-linear-gradient(left, var(--primary-color), var(--primary-color-hover), #4f4f4f, var(--para-color) 75%);
         }
 }
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+
+<th:block th:fragment="form">
+
+    <!-- FORM -->
+    <section class="row pt-5" id="contact">
+        <div class="col-12 col-md-6 my-4 justify-content-end">
+            <div class="row">
+                <div class="col-12">
+                    <p class="section-header mb-2">Maximize Your Return Today</p>
+                </div>
+                <div class="col-12">
+                    <hr class="hr-green mb-4" />
+                </div>
+                <div class="col-12">
+                    <p>Complete the short form here and a FreeFile rep will contact you with more information.</p>
+                </div>
+                <div class="col-12">
+                    <small><em>Please note, this is a separate service. Terms &amp; conditions may apply.</em></small>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-5" id="form-div">
+            <form class="form needs-validation mt-4" action="https://mailthis.to/FreeFile" method="POST" enctype="multipart/form-data" th:novalidate="true">
+                <div class="form-group input-custom">
+                    <input class="form-control" th:id="firstName" type="text" name="First Name" placeholder="First Name" th:required="required"/>
+                    <div class="invalid-feedback">
+                        * Required field
+                    </div>
+                </div>
+                <div class="form-group input-custom">
+                    <input class="form-control" type="text" name="Last Name" placeholder="Last Name" th:required="required" />
+                    <div class="invalid-feedback">
+                        * Required field
+                    </div>
+                </div>
+                <div class="form-group input-custom">
+                    <input class="form-control" type="email" name="_replyto" placeholder="Email Address" th:required="required" />
+                    <div class="invalid-feedback">
+                        * Required field
+                    </div>
+                </div>
+                <div class="form-group input-custom">
+                    <input class="form-control" type="text" name="Contact Number" placeholder="Phone Number" th:required="required"/>
+                    <div class="invalid-feedback">
+                        * Required field
+                    </div>
+                </div>
+                <input type="hidden" name="_subject" value="[ NEW ] Loan Submission"/>
+                <input type="hidden" name="_after" value="http://freefile.io/"/>
+                <input type="hidden" name="_honeypot" value=""/>
+                <button type="submit" class="btn btn-block btn-custom btn-custom-blue mb-5">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</th:block>
+
+</body>
+</html>

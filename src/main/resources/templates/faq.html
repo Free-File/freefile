@@ -215,55 +215,7 @@
     </div>
 
     <!-- ====== ** footer ** ====== -->
-    <footer>
-        <div class="row">
-            <div class="col-12 col-md-2 text-md-left">
-                <div class="mobileViewUrls showOnSmall text-center mb-4">
-                    <a href="/">Home </a>
-                    <span>|</span>
-                    <a href="/loan">Cash Advance </a>
-                    <span>|</span>
-                    <a href="#questions">FAQ </a>
-                </div>
-                <small>
-                    <span class="title free">Free</span>
-                    <span class="title">File</span>
-                    <br/>
-                    <!--<a target="_blank" href="http://maps.google.com/?q=123+Perfect+St+San+Antonio+TX+78259">2004 Pleasanton Rd. <br/>San Antonio, TX 78221</a><br/>-->
-                    <a target="_blank" href="#">PO Box 1 <br/>San Antonio, TX 78221</a><br/>
-                    <a href="tel:2101112222" class="phone-no">(210) 111-2222</a><br/>
-                    © Copyright 2018
-                </small>
-                <div class="socialIcons mt-3">
-                    <i class="fab fa-facebook fa-2x"></i>
-                    <i class="fab fa-twitter-square fa-2x"></i>
-                    <i class="fab fa-instagram fa-2x"></i>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="row" id="logo-row">
-                    <div class="col-md-4 align-self-center footer-logo">
-                        <hr class="footer-hrs" />
-                    </div>
-                    <div class="col-md-4 align-self-center footer-logo">
-                        <a th:href="'/'" class="main-title">FF</a>
-                    </div>
-                    <div class="col-md-4 align-self-center footer-logo">
-                        <hr class="footer-hrs" />
-                    </div>
-                </div>
-            </div>
-            <!--<div class="footerContact text-center hideOnSmall">-->
-            <div class="col-12 col-md-2 d-none d-md-block text-right">
-                <h6>Helpful Links</h6>
-                <small>
-                    <a href="/loan">Cash Advance</a><br/>
-                    <a href="/">Home</a><br/>
-                    <a href="#questions">FAQ</a><br/>
-                </small>
-            </div>
-        </div>
-    </footer>
+    <th:block th:include="fragments/footer :: footer" />
 
     <th:block th:include="fragments/scripts :: scripts" />
 </body>

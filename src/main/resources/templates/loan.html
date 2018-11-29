@@ -85,111 +85,14 @@
             </div>
         </section>
 
-        <!-- FORM -->
-        <section class="row pt-5" id="contact">
-            <div class="col-12 col-md-6 my-4 justify-content-end">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="section-header mb-2">Maximize Your Return Today</p>
-                    </div>
-                    <div class="col-12">
-                        <hr class="hr-green mb-4" />
-                    </div>
-                    <div class="col-12">
-                        <p>Complete the short form here and a FreeFile rep will contact you with more information.</p>
-                    </div>
-                    <div class="col-12">
-                        <small><em>Please note, this is a separate service. Terms &amp; conditions may apply.</em></small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-5" id="form-div">
-                <form class="form needs-validation mt-4" action="https://mailthis.to/FreeFile" method="POST" enctype="multipart/form-data" th:novalidate="true">
-                    <div class="form-group input-custom">
-                        <input class="form-control" th:id="firstName" type="text" name="First Name" placeholder="First Name" th:required="required"/>
-                        <div class="invalid-feedback">
-                            * Required field
-                        </div>
-                    </div>
-                    <div class="form-group input-custom">
-                        <input class="form-control" type="text" name="Last Name" placeholder="Last Name" th:required="required" />
-                        <div class="invalid-feedback">
-                            * Required field
-                        </div>
-                    </div>
-                    <div class="form-group input-custom">
-                        <input class="form-control" type="email" name="_replyto" placeholder="Email Address" th:required="required" />
-                        <div class="invalid-feedback">
-                            * Required field
-                        </div>
-                    </div>
-                    <div class="form-group input-custom">
-                        <input class="form-control" type="text" name="Contact Number" placeholder="Phone Number" th:required="required"/>
-                        <div class="invalid-feedback">
-                            * Required field
-                        </div>
-                    </div>
-                        <input type="hidden" name="_subject" value="[ NEW ] Loan Submission"/>
-                        <input type="hidden" name="_after" value="http://freefile.io/"/>
-                        <input type="hidden" name="_honeypot" value=""/>
-                    <button type="submit" class="btn btn-block btn-custom btn-custom-blue mb-5">Submit</button>
-                </form>
-            </div>
-        </section>
+        <!--FORM-->
+        <th:block th:include="fragments/form :: form" />
 
         <!--container end-->
     </div>
 
     <!-- ====== ** footer ** ====== -->
-    <footer>
-        <div class="row">
-            <div class="col-12 col-md-2 text-md-left">
-                <div class="mobileViewUrls showOnSmall text-center mb-4">
-                    <a href="/">Home </a>
-                    <span>|</span>
-                    <a href="#about">Cash Advance </a>
-                    <span>|</span>
-                    <a href="/faq">FAQ </a>
-                </div>
-                <small>
-                    <span class="title free">Free</span>
-                    <span class="title">File</span>
-                    <br/>
-                    <!--<a target="_blank" href="http://maps.google.com/?q=123+Perfect+St+San+Antonio+TX+78259">PO Box 1 <br/>San Antonio, TX 78221</a><br/>-->
-                    <a target="_blank" href="#">PO Box 1 <br/>San Antonio, TX 78221</a><br/>
-                    <a href="tel:2101112222" class="phone-no">(888) 999-9999</a><br/>
-                    © Copyright 2018
-                </small>
-                <div class="socialIcons mt-3">
-                    <i class="fab fa-facebook fa-2x"></i>
-                    <i class="fab fa-twitter-square fa-2x"></i>
-                    <i class="fab fa-instagram fa-2x"></i>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="row" id="logo-row">
-                    <div class="col-md-4 align-self-center footer-logo">
-                        <hr class="footer-hrs" />
-                    </div>
-                    <div class="col-md-4 align-self-center footer-logo">
-                        <a th:href="'/'" class="main-title">FF</a>
-                    </div>
-                    <div class="col-md-4 align-self-center footer-logo">
-                        <hr class="footer-hrs" />
-                    </div>
-                </div>
-            </div>
-            <!--<div class="footerContact text-center hideOnSmall">-->
-            <div class="col-12 col-md-2 d-none d-md-block text-right">
-                <h6>Helpful Links</h6>
-                <small>
-                    <a href="#about">Cash Advance</a><br/>
-                    <a href="/">Home</a><br/>
-                    <a href="/faq">FAQ</a><br/>
-                </small>
-            </div>
-        </div>
-    </footer>
+    <th:block th:include="fragments/footer :: footer" />
 
     <th:block th:include="fragments/scripts :: scripts" />
     <script th:src="@{js/form.js}"></script>

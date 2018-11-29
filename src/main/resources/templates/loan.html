@@ -10,16 +10,32 @@
     <!--Navbar-->
     <th:block th:include="fragments/navbar :: nav-alt" />
 
-    <div class="container-fluid text-center mt-4 px-5">
+    <div class="container-fluid text-center mt-4">
 
         <div class="mt-5">
-            <h2 class="faq-heading mt-5"><i class="fas fa-dollar-sign"></i> Personal Loans</h2>
+            <h2 class="faq-heading mt-5"><i class="fas fa-dollar-sign"></i> Cash Advance</h2>
             <hr/>
         </div>
+        <div class="row" id="about">
+            <div class="col-12 px-5">
+                <p class="graytext p-4">
+                    Need Money Now! We can help. How would you like $500 - $6,000 of your tax refund now!
 
-        <section id="loans" class="row p-3">
+                    With Santa Barbara Refund Solutions Group , you can be apply for a refund
+                    advance loan, and be approved with minutes.
+                    <br/>
+                    <br/>
+                    TPG is excited to offer the Fast Cash ADVANCE program to help you grow your business. The Fast Cash
+                    ADVANCE allows you to offer your taxpayers an advance against their expected tax refund. The product
+                    is available once the IRS starts accepting tax returns.
+                </p>
+            </div>
+        </div>
+
+        <!-- ====== ** Key Facts ** ====== -->
+        <section id="info-section" class="row p-3 hideOnSmall">
             <div class="col-12 my-3 d-flex align-self-center justify-content-center">
-                <h6 class="section-header">Maximize Your Return Potential</h6>
+                <h6 class="section-header">Program Key Facts</h6>
             </div>
             <div class="col-12">
                 <hr class="hr-green mb-5" />
@@ -29,31 +45,52 @@
                     <div class="services col-12 col-md-4 px-auto">
                         <!--<p class="mb-3">Zero Cost</p>-->
                         <i class="fas fa-hand-holding-usd fa-4x"></i>
-                        <p class="my-4 graytext">Leverage your return to get more cash in your pocket. first reinforcement here.
-                            Lorem ipsum dolor sit amet, consectetur earum.</p>
+                        <p class="my-4 graytext">
+                            * The Fast Cash ADVANCE has multiple possible loan amounts ranging from $500 to $6,000, giving
+                            your taxpayer the best chance for loan approval.
+                            <br/>
+                            <br/>
+                            * The Fast Cash ADVANCE is affordable to the taxpayer. The taxpayer may elect to limit its
+                            application to an amount that has no interest or other fees. If the taxpayer elects to apply for
+                            the entire Fast Cash ADVANCE available to them, they are charged an interest rate of
+                            approximately 36% on the total loan amount.
+                        </p>
                     </div>
                     <div class="services col-12 col-md-4 px-auto">
                         <!--<p class="mb-3">Certified Professionals</p>-->
                         <i class="fas fa-piggy-bank fa-4x"></i>
-                        <p class="my-4 graytext">Do you need an additional 5-10% on top of your return? We can help. Fill out the form below with your information,
-                            and let's get the capital you need right now.</p>
+                        <p class="my-4 graytext">
+                            * The Fast Cash ADVANCE product cost is paid by any interest paid by the taxpayer and fees you,
+                            as the preparer, pay. TPG has created an affordable program with reasonable product fees
+                            depending on the loan amount the taxpayer is approved for
+                            <br/>
+                            <br/>
+                            * Customers can elect to receive the Fast Cash ADVANCE via cashier’s check or Green Dot
+                            Walmart Money card.
+                        </p>
                     </div>
                     <div class="services col-12 col-md-4 px-auto">
                         <!--<p class="mb-3">Fast Payment</p>-->
                         <i class="fas fa-award fa-4x"></i>
-                        <p class="my-4 graytext">Insert third talking point here. third point reinforcement here. Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Adipisci doloremque earum.</p>
+                        <p class="my-4 graytext">
+                            * Customers can visit <a href="https://taxpayer.sbtpg.com/">here</a> to monitor their account status and get updates on
+                            their Fast Cash ADVANCE.
+                            <br/>
+                            <br/>
+                            * Once the IRS issues the taxpayer’s refund, TPG will deduct the Fast Cash ADVANCE amount from
+                            the refund amount.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--loan form -->
+        <!-- FORM -->
         <section class="row pt-5" id="contact">
             <div class="col-12 col-md-6 my-4 justify-content-end">
                 <div class="row">
                     <div class="col-12">
-                        <p class="section-header mb-2">Maximize Your Return</p>
+                        <p class="section-header mb-2">Maximize Your Return Today</p>
                     </div>
                     <div class="col-12">
                         <hr class="hr-green mb-4" />
@@ -110,17 +147,17 @@
                 <div class="mobileViewUrls showOnSmall text-center mb-4">
                     <a href="/">Home </a>
                     <span>|</span>
-                    <a href="/faq">FAQ </a>
+                    <a href="#about">Cash Advance </a>
                     <span>|</span>
-                    <a href="#loan">Loan </a>
+                    <a href="/faq">FAQ </a>
                 </div>
                 <small>
                     <span class="title free">Free</span>
                     <span class="title">File</span>
                     <br/>
-                    <a target="_blank" href="http://maps.google.com/?q=123+Perfect+St+San+Antonio+TX+78259">123 Perfect St <br/>San Antonio, TX 78259</a><br/>
-                    <a href="tel:2101112222" class="phone-no">(210)111-2222</a><br/>
-                    M - F 9am - 9pm<br/>
+                    <!--<a target="_blank" href="http://maps.google.com/?q=123+Perfect+St+San+Antonio+TX+78259">PO Box 1 <br/>San Antonio, TX 78221</a><br/>-->
+                    <a target="_blank" href="#">PO Box 1 <br/>San Antonio, TX 78221</a><br/>
+                    <a href="tel:2101112222" class="phone-no">(888) 999-9999</a><br/>
                     © Copyright 2018
                 </small>
                 <div class="socialIcons mt-3">
@@ -146,8 +183,8 @@
             <div class="col-12 col-md-2 d-none d-md-block text-right">
                 <h6>Helpful Links</h6>
                 <small>
+                    <a href="#about">Cash Advance</a><br/>
                     <a href="/">Home</a><br/>
-                    <a href="#loan">Loans</a><br/>
                     <a href="/faq">FAQ</a><br/>
                 </small>
             </div>

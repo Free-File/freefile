@@ -7,19 +7,33 @@
 </head>
 <body>
 
-    <!--Navbar-->
-    <th:block th:include="fragments/navbar :: nav-alt" />
+    <!-- // ====== Navbar ====== \\ -->
+    <th:block th:include="fragments/nav-alt :: nav-alt" />
 
     <div class="container-fluid text-center mt-4">
 
-        <div class="mt-5">
-            <h2 class="faq-heading mt-5"><i class="fas fa-dollar-sign"></i> Cash Advance</h2>
-            <hr/>
-        </div>
-        <div class="row" id="about">
-            <div class="col-12 px-5">
-                <p class="graytext p-4">
-                    Need Money Now! We can help. How would you like $500 - $6,000 of your tax refund now!
+        <section class="mt-5">
+            <div class="col-12 my-3 d-flex align-self-center justify-content-center">
+                <h6 class="section-header">Cash Advance</h6>
+            </div>
+            <div class="col-12">
+                <hr class="hr-green mb-5" />
+            </div>
+        </section>
+        <hr/>
+
+        <!-- // ====== Intro ====== \\ -->
+        <section id="about" class="row">
+            <div class="col-md-2"></div>
+            <div class="col-12 col-md-4 mt-4 d-flex align-self-center justify-content-center">
+                <p class="section-header" id="wIFF">Need Money Now?</p>
+            </div>
+            <div class="col-12 d-block d-md-none">
+                <hr class="hr-green" />
+            </div>
+            <div class="col-12 col-md-4 mt-4 p-3 h-100">
+                <p>
+                    We can help! How would you like $500 - $6,000 of your tax refund now!
 
                     With Santa Barbara Refund Solutions Group , you can be apply for a refund
                     advance loan, and be approved with minutes.
@@ -29,13 +43,15 @@
                     ADVANCE allows you to offer your taxpayers an advance against their expected tax refund. The product
                     is available once the IRS starts accepting tax returns.
                 </p>
+                <p><a href="#contact" class="btn btn-custom btn-custom-blue my-3">Find out More</a></p>
             </div>
-        </div>
+            <div class="col-md-2"></div>
+        </section>
 
-        <!-- ====== ** Key Facts ** ====== -->
+        <!-- // ====== Program Facts ====== \\ -->
         <section id="info-section" class="row p-3 hideOnSmall">
             <div class="col-12 my-3 d-flex align-self-center justify-content-center">
-                <h6 class="section-header">Program Key Facts</h6>
+                <h6 class="section-header">Program Facts</h6>
             </div>
             <div class="col-12">
                 <hr class="hr-green mb-5" />
@@ -43,7 +59,6 @@
             <div class="col-12 px-5">
                 <div class="row">
                     <div class="services col-12 col-md-4 px-auto">
-                        <!--<p class="mb-3">Zero Cost</p>-->
                         <i class="fas fa-hand-holding-usd fa-4x"></i>
                         <p class="my-4 graytext">
                             * The Fast Cash ADVANCE has multiple possible loan amounts ranging from $500 to $6,000, giving
@@ -57,7 +72,6 @@
                         </p>
                     </div>
                     <div class="services col-12 col-md-4 px-auto">
-                        <!--<p class="mb-3">Certified Professionals</p>-->
                         <i class="fas fa-piggy-bank fa-4x"></i>
                         <p class="my-4 graytext">
                             * The Fast Cash ADVANCE product cost is paid by any interest paid by the taxpayer and fees you,
@@ -70,7 +84,6 @@
                         </p>
                     </div>
                     <div class="services col-12 col-md-4 px-auto">
-                        <!--<p class="mb-3">Fast Payment</p>-->
                         <i class="fas fa-award fa-4x"></i>
                         <p class="my-4 graytext">
                             * Customers can visit <a href="https://taxpayer.sbtpg.com/">here</a> to monitor their account status and get updates on
@@ -85,13 +98,13 @@
             </div>
         </section>
 
-        <!--FORM-->
-        <th:block th:include="fragments/form :: form" />
+        <!-- // ====== FORM ====== \\ -->
+        <th:block th:include="fragments/form-loan :: form-loan" />
 
         <!--container end-->
     </div>
 
-    <!-- ====== ** footer ** ====== -->
+    <!-- // ====== footer ====== \\ -->
     <th:block th:include="fragments/footer :: footer" />
 
     <th:block th:include="fragments/scripts :: scripts" />

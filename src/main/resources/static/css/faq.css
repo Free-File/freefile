@@ -6,6 +6,10 @@
 
 body {overflow-x: hidden;}
 
+.faq-heading {
+    color: var(--secondary-color);
+}
+
 .mailIcon i {
     transition: var(--easeIn);
     color: var(--primary-color);
@@ -22,9 +26,26 @@ body {overflow-x: hidden;}
 }
 
 .card-body {
-    padding: 0 10rem 0 10rem;
+    padding: 0 15rem 0 5rem;
 }
 
+.btn-link {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+.btn-link:hover {
+    color: var(--primary-color-hover);
+    transition: var(--easeOut);
+    text-decoration: none;
+}
+.btn-link:focus {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.card-body > ul {
+    list-style: square;
+}
 @media screen and (max-width: 575px) {
 
     .hideOnSmall {

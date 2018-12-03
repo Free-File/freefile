@@ -208,10 +208,6 @@ nav {
     color: var(--secondary-color);
 }
 
-/* ========== QUALIFY SECTION ========== */
-
-
-
 /* ========== APP SECTION ========== */
 
 #iphoneApp {
@@ -263,18 +259,6 @@ ul {
 .graytext {
     color: #5d5d5d;
 }
-
-#servicesRow1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-
-/*#servicesRow2 {*/
-    /*display: grid;*/
-    /*grid-template-columns: repeat(2, 1fr);*/
-    /*grid-gap: 10px;*/
-/*}*/
 
 .formContact {
     height: 500px;
@@ -376,16 +360,6 @@ footer a:hover {
 
     .hideOnSmall {
         display: none;
-    }
-
-    /*#servicesRow2 {*/
-        /*display: none;*/
-    /*}*/
-
-    #servicesRow1 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
     }
 
     .footerGrid {

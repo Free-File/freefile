@@ -32,6 +32,7 @@ body {overflow-x: hidden;}
 .btn-link {
     font-size: 1.4rem;
     color: var(--primary-color);
+    white-space: normal;
 }
 .btn-link:hover {
     color: var(--primary-color-hover);

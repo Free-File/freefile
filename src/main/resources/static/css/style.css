@@ -288,14 +288,15 @@ footer a:hover {
     transition: var(--easeOut);
 }
 
-.socialIcons i {
+.social-links {
     padding: 5px 5px 5px 0;
 }
 
-.socialIcons i:hover {
+.social-links:hover {
     color: var(--secondary-color-hover);
     transition: var(--easeOut);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .free {

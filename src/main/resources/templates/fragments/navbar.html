@@ -9,11 +9,11 @@
 <th:block th:fragment="navbar">
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white;">
-       <div class="container">
+       <div class="container ml-0">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
            </button>
-           <a class="navbar-brand ml-auto order-md-last title" href="/">
+           <a class="navbar-brand ml-auto order-md-first title" href="/">
                <span class="logo-l title">Free</span>
                <span class="logo-r title">File</span>
            </a>
@@ -29,9 +29,6 @@
                        <a class="nav-link link-custom seventh before after" href="#services">Services</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link link-custom seventh before after" href="#works">How it Works</a>
-                   </li>
-                   <li class="nav-item">
                        <a class="nav-link link-custom seventh before after" href="/faq">FAQ</a>
                    </li>
                    <li class="nav-item">
@@ -41,11 +38,12 @@
                        <a class="nav-link link-custom seventh before after" href="#contact">Contact Us</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link link-custom seventh before after" href="/loan">Cash Advance</a>
+                       <a class="nav-link btn" href="/loan" id="taxBtn">Tax Advance</a>
                    </li>
                </ul>
            </div>
        </div>
+        <a href="tel:8667373334" class="phone-no mx-auto hideOnSmall" style="color: rgba(0,0,0,.5);">(866) 737-3334</a>
     </nav>
 
 </th:block>
